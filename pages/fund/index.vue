@@ -2,19 +2,18 @@
   <view class="fund">
 	  <!-- 轮播图 -->
 	 <view class="block">
-	        <u-swiper calss="rotation"
-	                    :list="pic"
-	                    circular
-	                    :autoplay="false"
-	                    radius="10px"
-	                    bgColor="#ffffff"
-	 				   height="196px"
-	 				   indicator
-	 				   indicatorMode="dot"
-					   indicatorActiveColor="#5f67ec"
-					   indicatorInactiveColor="#d2d2d2"
-					   indicatorStyle="bottom"
-	            ></u-swiper>
+	        <carousel :img-list="info" url-key="url">
+				
+				<!-- <uni-swiper-dot :info="info" :current="current" field="content" :mode="mode">
+					<swiper class="swiper-box" @change="change">
+						<swiper-item v-for="(item ,index) in info" :key="index">
+							<view class="swiper-item">
+								{{item.content}}
+							</view>
+						</swiper-item>
+					</swiper>
+				</uni-swiper-dot> -->
+			</carousel>
 	 </view>
 	  <!-- 限购 -->
 	  <view class="shopp">
@@ -31,16 +30,22 @@
 </template>
 
 <script>
-export default {
+import carousel from '@/components/vear-carousel/vear-carousel'
+	    export default {
+	        components: {
+	            carousel
+	        },
   name: 'MyYimiaoDemoIndex',
 
   data () {
     return {
-		pic:[
-			"../../static/组 663.png",
-			"../../static/矩形 529 (1).png"
-			
-		]
+		info:[
+			{url: "../../static/组 663.png"},
+			{url: "../../static/矩形 529 (1).png"}
+		],
+		current: 0,
+		mode: 'round',
+		
 	}
   },
 
@@ -54,9 +59,6 @@ export default {
 	.fund{
 		.block{
 			
-			.rotation{
-			
-			}
 		
 		  }
 	}
