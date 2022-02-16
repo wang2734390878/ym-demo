@@ -48,7 +48,7 @@
 
     <view class="inComing ">
     	<image class="inComingPic" src="../../static/组 618.png" mode="scaleToFill" />
-    	<text style="font-size: 28px;color: #6870ed;">
+    	<text style="font-size: 36rpx;color: #6870ed;">
     	  会员进单
     	</text>
     </view>
@@ -119,7 +119,7 @@ export default {
         vertical-align: middle;
       }
       text{
-          margin-left:28rpx;
+          margin-left:14rpx;
           font-size: 24rpx;
 		 vertical-align: middle
       }
