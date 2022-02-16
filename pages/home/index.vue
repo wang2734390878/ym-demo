@@ -36,29 +36,31 @@
         <view class="u-demo-block">
            <u-swiper calss="rotation"
                        :list="listPic"
-                       previousMargin="10px"
+                       previousMargin="2px"
                        nextMargin="10px"
                        circular
                        :autoplay="false"
                        radius="5px"
                        bgColor="#ffffff"
 					   height="136px"
+					   autoplay
                ></u-swiper>
     </view>
 
     <view class="inComing ">
     	<image class="inComingPic" src="../../static/组 618.png" mode="scaleToFill" />
-    	<text style="font-size: 36rpx;color: #6870ed;">
+    	<text style="font-size: 36rpx;color: #333;">
     	  会员进单
     	</text>
     </view>
 	<view class="schedule">
 		
 	<image src="../../static/组 626 (1).png"  class="left" ></image>
+
 		<view class="right">
-		 	<text style="color: #333333;">项目规模 : 1万元每小时返利,到期还本</text>
+		 	<text style="color: #333333;">项目规模: 1万元每小时返利,到期还本</text>
 			<h2>3.81%</h2>
-			<text style="color: #333333;">1日化利率 1万起投</text>
+			<text style="color: #9999;">1日化利率 1万起投</text>
 			<br>
 			<text style="color: #F1B52C;font-size: 28rpx;">可行中维-亚单位疫苗</text>
 		</view>
@@ -69,12 +71,14 @@
 </template>
 
 <script>
+	
 export default {
+
   name: "MyYimiaoDemoIndex",
 
   data() {
     return {
-       listPic:["../../static/组 627.png","../../static/组 628.png"]
+       listPic:["../../static/组 627.png","../../static/组 628.png"],
     };
   },
 
@@ -107,8 +111,8 @@ export default {
 		margin-bottom: 16rpx;
       }
       text {
-        font-size: 24rpx;
-        color: #333;
+        font-size: 22rpx;
+        color: #626262;
       }
     }
     .site,.inComing{
@@ -126,6 +130,7 @@ export default {
     }
   // 轮播图
   .u-demo-block{
+	  margin-right: -40rpx;
 ::v-deep .uni-swiper-slides{
 	width: 464rpx;
   }
@@ -137,6 +142,7 @@ export default {
 	  margin-top: 8rpx;
 	  font-size: 23rpx;
 	  position: relative;
+	  border-radius: 16rpx;
 	  .left{
 		  display: inline-block;
 		  width: 160rpx;
@@ -153,7 +159,7 @@ export default {
 	  .btn{
 		  position: absolute;
           right:48rpx;
-		  bottom: 28rpx;
+		  bottom: 22rpx;
 		  font-size: 20rpx;
 	  }
   }
