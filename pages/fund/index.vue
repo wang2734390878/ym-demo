@@ -4,14 +4,16 @@
 	 <view class="block">
 	        <u-swiper calss="rotation"
 	                    :list="pic"
-	                    previousMargin="2px"
-	                    nextMargin="6px"
 	                    circular
 	                    :autoplay="false"
 	                    radius="10px"
 	                    bgColor="#ffffff"
 	 				   height="196px"
-	 				   autoplay
+	 				   indicator
+	 				   indicatorMode="dot"
+					   indicatorActiveColor="#5f67ec"
+					   indicatorInactiveColor="#d2d2d2"
+					   indicatorStyle="bottom"
 	            ></u-swiper>
 	 </view>
 	  <!-- 限购 -->
@@ -36,7 +38,7 @@ export default {
     return {
 		pic:[
 			"../../static/组 663.png",
-			"../../static/矩形 529.png"
+			"../../static/矩形 529 (1).png"
 			
 		]
 	}
@@ -50,12 +52,12 @@ export default {
 
 <style lang="scss" scoped>
 	.fund{
-		margin: 0 40rpx ;
 		.block{
-			  margin-right: -40rpx;
-		::v-deep .uni-swiper-slides{
-			width: 636rpx;
-		  }
+			
+			.rotation{
+			
+			}
+		
 		  }
 	}
 </style>
