@@ -59,7 +59,8 @@
 
 		<view class="right">
 		 	<text style="color: #333333;">项目规模: 1万元每小时返利,到期还本</text>
-			<h2>3.81%</h2>
+			<text style="font-size: 32rpx;"> 3.81%</text>
+			<br>
 			<text style="color: #9999;">1日化利率 1万起投</text>
 			<br>
 			<text style="color: #F1B52C;font-size: 28rpx;">可行中维-亚单位疫苗</text>
@@ -112,11 +113,15 @@ export default {
       }
       text {
         font-size: 22rpx;
-        color: #626262;
+        color: #333333;
       }
     }
-    .site,.inComing{
-        margin: 54rpx 0;
+	.inComing{
+		margin: 48rpx 0 96rpx 0;
+	}
+    .site,{
+        margin: 46rpx  0;
+      }
       .sitePic,.inComingPic{
         width: 48rpx;
         height: 48rpx;
@@ -126,7 +131,6 @@ export default {
           margin-left:14rpx;
           font-size: 24rpx;
 		 vertical-align: middle
-      }
     }
   // 轮播图
   .u-demo-block{
@@ -152,9 +156,9 @@ export default {
 	  .right{
 		  position: absolute;
 		  top: 28rpx;
-		  right: 40rpx ;
+		  right: 20rpx ;
 		  display: inline-block;
-		  width: 400rpx;
+		  width: 420rpx;
 	  }
 	  .btn{
 		  position: absolute;

@@ -15,4 +15,7 @@
 <style lang="scss" scoped>
 	/*每个页面公共css */
 	@import "uview-ui/index.scss";  
+	page{
+		font-family:"HEAVY";
+	}
 </style>

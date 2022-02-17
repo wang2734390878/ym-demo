@@ -76,11 +76,11 @@ $uni-color-paragraph: #3F536E; // 文章段落颜色
 $uni-font-size-paragraph:15px;
 @import "uview-ui/theme.scss";
 @font-face{
-		font-family:"MEDIUM";
-		src: url('~@/static/PINGFANG MEDIUM.TTF')
+		font-family:"HEAVY";
+		src: url('~@/static/PINGFANG HEAVY.TTF')
    }
    page{
-	   font-family: MEDIUM;
+	   font-family: 'HEAVY';
 	   color: #000000;
-	   font-size: 24rpx;
+	   font-size: 14rpx;
    }
