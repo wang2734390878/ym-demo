@@ -46,7 +46,8 @@
 	.image-container {
 		width: 750rpx;
 		height: 508rpx;
-		margin-bottom: 128rpx;
+		padding-bottom: 128rpx;
+		
 	}
 
 	.item-img {

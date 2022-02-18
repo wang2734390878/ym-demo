@@ -14,15 +14,15 @@
         </view>
         <view>
           <image src="../../static/会员收益.png" class="navPic"/>
-          <text>会员收益</text>
+          <text >会员收益</text>
         </view>
         <view>
           <image src="../../static/新手教学.png" class="navPic"/>
-          <text>新手教学</text>
+          <text >新手教学</text>
         </view>
         <view>
           <image src="../../static/推广奖励.png" class="navPic"/>
-          <text>推广奖励</text>
+          <text >推广奖励</text>
         </view>
       </view>
       <!-- 网址 -->
@@ -59,7 +59,7 @@
 
 		<view class="right">
 		 	<text style="color: #333333;">项目规模: 1万元每小时返利,到期还本</text>
-			<text style="font-size: 32rpx;"> 3.81%</text>
+			<text style="font-size: 32rpx;font-weight: 800;"> 3.81%</text>
 			<br>
 			<text style="color: #9999;">1日化利率 1万起投</text>
 			<br>
@@ -113,7 +113,7 @@ export default {
       }
       text {
         font-size: 22rpx;
-        color: #333333;
+        color: #999999;
       }
     }
 	.inComing{

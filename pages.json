@@ -5,7 +5,8 @@
   "pages": [
     {
       "path": "pages/home/index",
-      "style": {}
+      "style": {
+	  }
     },
     {
       "path": "pages/vip/index",
@@ -27,6 +28,7 @@
   "tabBar": {
     "selectedColor": "#5F67EC",
     "backgroundColor": "#ffffff",
+	
     "list": [
       {
         "pagePath": "pages/home/index",

@@ -4,7 +4,7 @@
 	 <view class="block">
 	        <carousel :img-list="info" url-key="url">
 			</carousel>
-			
+	
 	 </view>
 	  <!-- 限购 -->
 	  <view class="shopp">
@@ -32,9 +32,7 @@
 	  	          </uni-grid-item>
 	  	      </uni-grid>
 	  	     </view>
-    	 <view class="btn">
-    	 	<text>我要认领</text>
-    	 </view>
+    		<u-button class="btn" type="primary" shape="circle" text="我要认领"></u-button>
 	  </view>
 	  
 	  </view>
@@ -111,20 +109,20 @@ import carousel from '@/components/vear-carousel/vear-carousel'
 </script>
 
 <style lang="scss" scoped>
-	.fund{
-	.shopp{
-		margin: 0rpx 40rpx;
-	   height: 96rpx;;
-       .swiper{
-		   height: 156rpx;
-	   }
-		.swiper-item{
-			width: 202rpx;
-			height: 96rpx;
-			background-color: #FFFFFF;
-		  box-shadow: 0 10rpx 20rpx rgba($color: #6f6f6f, $alpha: 0.3);
+	.fund{ min-height: 100vh;
+		.shopp{
+			padding: 0 40rpx;
+		   height: 96rpx;;
+		   .swiper{
+			   height: 156rpx;
+		   }
+			.swiper-item{
+				width: 202rpx;
+				height: 96rpx;
+				background-color: #FFFFFF;
+				box-shadow: 0 10rpx 20rpx rgba($color: #6f6f6f, $alpha: 0.3);
+			}
 		}
-	}
 	.term{
 		height: 136rpx;
 		.text{
@@ -133,20 +131,12 @@ import carousel from '@/components/vear-carousel/vear-carousel'
 			text-align: center;
 			line-height: 136rpx;
 		}
+		.btn{
+			margin-top: 95rpx;
+			background-color: #5f67ec;
+		}
 	}
-	  .btn{
-		  position: absolute;
-		  width: 670rpx;
-		  height: 72rpx;
-		  background-color: #5f67ec;
-		  margin-top: 95rpx;
-		  font-size: 36rpx;
-		  color: #FFFFFF;
-		  font-family: "EXTRALIGHT";
-		  border-radius: 28rpx;
-		  text-align: center;
-		  line-height: 72rpx;
-	  }
+	 
 	  @font-face{
 	  		font-family:"BOLD";
 	  		src: url('~@/static/PINGFANG BOLD.TTF')

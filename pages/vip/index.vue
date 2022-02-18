@@ -84,6 +84,10 @@ export default {
 			 background-color:#d2d2d2;
 			 border-radius: 40rpx;
 			 text-align: center;
+			 color: #FFFFFF;
+		 }
+		 .go:active{
+			 background-color: #5f67ec;
 		 }
    }
  }
