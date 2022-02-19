@@ -32,5 +32,4 @@
 .header_top{
 	padding-top: calc(45px + var(--status-bar-height));
 }
-   
 </style>

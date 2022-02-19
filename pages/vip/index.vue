@@ -1,7 +1,6 @@
 <template>
-<view class="vip">
-	<view class="vipPic">	
-	</view>
+<view class="--status-bar-height">
+	<view class="vip">
  <image
    src="../../static/组 629.png"
    mode="aspectFit"
@@ -19,6 +18,7 @@
 	</radio-group>
 </view>
 </view>
+	</view>
 </template>
 
 <script>
@@ -56,9 +56,6 @@ export default {
 	 font-size: 36rpx;
 	 color: #333;
 	.vipPic{
-		position: absolute;
-		top: 172rpx;
-		left: 206rpx;
 		height: 340rpx;
 		width: 340rpx;
 		margin-bottom: 24rpx;
@@ -67,7 +64,7 @@ export default {
 		width: 100%;
 		font-size: 40rpx;
 		font-weight: 600;
-		margin-bottom: 90rpx;
+		margin: 12px 0 88rpx 0;
 		text-align: center;
 	}
    .list{

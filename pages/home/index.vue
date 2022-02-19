@@ -1,5 +1,5 @@
 <template>
-  <view class="home">
+  <view class="--status-bar-height">
     <image
       src="../../static/画板 1.png"
       mode="scaleToFill"
@@ -8,7 +8,7 @@
     <view class="last">
       <!-- 导航列表 -->
       <view class="navList">
-        <view>
+        <view @click="toIntroduce">
           <image src="../../static/公司介绍.png" class="navPic"/>
           <text>公司介绍</text>
         </view>
@@ -85,7 +85,18 @@ export default {
 
   mounted() {},
 
-  methods: {},
+  methods: {
+	  toIntroduce(){
+		  uni.navigateTo({
+		  	url: '/pages/home/Introduce',
+		  	success: res => {
+				console.log('我跳转了')
+			},
+		  	fail: () => {},
+		  	complete: () => {}
+		  });
+	  }
+  },
 };
 </script>
 

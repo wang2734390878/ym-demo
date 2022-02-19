@@ -1,10 +1,9 @@
 <template>
-  <view class="fund">
+  <view class="--status-bar-height">
 	  <!-- 轮播图 -->
 	 <view class="block">
 	        <carousel :img-list="info" url-key="url">
 			</carousel>
-	
 	 </view>
 	  <!-- 限购 -->
 	  <view class="shopp">
@@ -109,7 +108,8 @@ import carousel from '@/components/vear-carousel/vear-carousel'
 </script>
 
 <style lang="scss" scoped>
-	.fund{ min-height: 100vh;
+	.fund{ 
+		min-height: 100vh;
 		.shopp{
 			padding: 0 40rpx;
 		   height: 96rpx;;

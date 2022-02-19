@@ -21,10 +21,13 @@
       "style": {}
     },
     {
+      "path": "pages/home/Introduce",
+      "style": {}
+    },{
       "path": "pages/my/index",
       "style": {}
     }
-  ],
+    ],
   "tabBar": {
     "selectedColor": "#5F67EC",
     "backgroundColor": "#ffffff",
@@ -65,6 +68,8 @@
   "globalStyle":{
 	  "navigationStyle": "custom"
 	  
-  }
+  },"easycom": {  
+	    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"  
+	}
 
 }
