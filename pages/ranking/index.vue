@@ -1,5 +1,5 @@
 <template>
-	<view class="--status-bar-height">
+	<view class="--status-bar-height ranking">
 		<view class="top">
 			<u-tabs class="tabs" :list="list1" lineColor="#5F67EC" :inactiveStyle="{color:'#999999'}" lineHeight="4px"
 				lineWidth="60px"></u-tabs>
@@ -96,7 +96,7 @@
 
 		.bgc {
 			padding: 0 36rpx;
-			background: url('/static/组%20678.png') right bottom no-repeat, ;
+			background: url('/static/组 678.png') right bottom no-repeat, ;
 			background-size: 100%;
 			height: 630rpx;
 			color: #FFFFFF;

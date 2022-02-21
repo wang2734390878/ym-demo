@@ -1,5 +1,5 @@
 <template>
-  <view class="--status-bar-height">
+  <view class="--status-bar-height home">
     <image
       src="../../static/画板 1.png"
       mode="scaleToFill"
@@ -9,25 +9,25 @@
       <!-- 导航列表 -->
       <view class="navList">
         <view @click="toIntroduce">
-          <image src="../../static/公司介绍.png" class="navPic"/>
+         <image src="../../static/01.png" mode="widthFix"class="navPic" style="width: 104rpx;"></image>
           <text>公司介绍</text>
         </view>
-        <view>
-          <image src="../../static/会员收益.png" class="navPic"/>
+        <view @click="tovipProfit">
+          <image src="../../static/02.png" class="navPic" mode="widthFix" style="width: 104rpx;"/>
           <text >会员收益</text>
         </view>
-        <view>
-          <image src="../../static/新手教学.png" class="navPic"/>
+        <view @click="tonewTeacher">
+          <image src="../../static/03.png" class="navPic" mode="widthFix" style="width: 104rpx;"/>
           <text >新手教学</text>
         </view>
-        <view>
-          <image src="../../static/推广奖励.png" class="navPic"/>
+        <view @click="toExtension">
+          <image src="../../static/04.png" class="navPic" mode="widthFix" style="width: 104rpx;"/>
           <text >推广奖励</text>
         </view>
       </view>
       <!-- 网址 -->
       <view class="site">
-        <image class="sitePic" src="../../static/组 617.png" mode="scaleToFill" />
+        <image class="sitePic" src="../../static/组 617.png" mode="widthFix" />
         <text >
           http://45.207.61.141:8501/moblie/index.html
         </text>
@@ -68,7 +68,7 @@
 		<u-button class="btn" type="primary" shape="circle" text="投资" style="width: 88rpx;height: 44rpx;background-color: #5F67EC;"></u-button>
 	</view>
     </view>
-  </view>
+	</view>
 </template>
 
 <script>
@@ -88,21 +88,38 @@ export default {
   methods: {
 	  toIntroduce(){
 		  uni.navigateTo({
-		  	url: '/pages/home/Introduce',
+		  	url: '/pages/home/Subdirectory/Introduce',
 		  	success: res => {
 				console.log('我跳转了')
 			},
 		  	fail: () => {},
 		  	complete: () => {}
 		  });
+	  },
+	  tovipProfit(){
+		 uni.navigateTo({
+		  	url:'/pages/home/Subdirectory/vipProfit',
+		  })
+	  },
+	  tonewTeacher(){
+		  uni.navigateTo({
+		  	url:'/pages/home/Subdirectory/newTeach'
+		  })
+	  },
+	  toExtension(){
+		  uni.navigateTo({
+		  	url:'/pages/home/Subdirectory/extension'
+		  })
 	  }
+	  
+	  
+	  
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .home {
-  width: 100%;
   font-size: 28rpx;
   .last {
     padding: 52rpx 40rpx;
@@ -118,8 +135,6 @@ export default {
       justify-content: space-between;
       .navPic {
         display: block;
-        height: 104rpx;
-        width: 104rpx;
 		margin-bottom: 16rpx;
       }
       text {

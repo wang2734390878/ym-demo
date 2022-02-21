@@ -1,5 +1,5 @@
 <template>
-  <view class="--status-bar-height">
+  <view class="--status-bar-height fund" >
 	  <!-- 轮播图 -->
 	 <view class="block">
 	        <carousel :img-list="info" url-key="url">

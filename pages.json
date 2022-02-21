@@ -5,8 +5,46 @@
   "pages": [
     {
       "path": "pages/home/index",
-      "style": {
-	  }
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/innerPage",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/marke",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/dynamisch",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/kurs",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/fonds",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/vipAntwort",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/kauffonds",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/mitarbeiter",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/shareholder",
+      "style": {}
+    }, {
+      "path": "pages/home/Subdirectory/Introduce",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/newTeach",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/vipProfit",
+      "style": {}
+    },{
+      "path": "pages/home/Subdirectory/extension",
+      "style": {}
     },
     {
       "path": "pages/vip/index",
@@ -20,13 +58,11 @@
       "path": "pages/ranking/index",
       "style": {}
     },
-    {
-      "path": "pages/home/Introduce",
-      "style": {}
-    },{
+   {
       "path": "pages/my/index",
       "style": {}
     }
+        
     ],
   "tabBar": {
     "selectedColor": "#5F67EC",
@@ -35,8 +71,8 @@
     "list": [
       {
         "pagePath": "pages/home/index",
-        "iconPath": "static/组 634.png",
-        "selectedIconPath": "static/组 625.png",
+        "iconPath": "/static/组 634.png",
+        "selectedIconPath": "/static/组 625.png",
         "text": "首页"
       },
       {

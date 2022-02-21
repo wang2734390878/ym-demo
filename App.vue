@@ -16,8 +16,24 @@
 	/*每个页面公共css */
 	@import "uview-ui/index.scss";  
 	@font-face{
-			font-family:"MEDIUM";
-			src: url('~@/static/PINGFANG MEDIUM.TTF')
+			font-family:"BOLD";
+			src: url('~@/static/PINGFANG BOLD.TTF')
+	   }
+	   @font-face{
+			font-family:"EXTRALIGHT";
+			src: url('~@/static/PINGFANG EXTRALIGHT.TTF')
+	   }
+	   @font-face{
+			font-family:"HEAVY";
+			src: url('~@/static/PINGFANG HEAVY.TTF')
+	   }
+	   @font-face{
+			font-family:"LIGHT";
+			src: url('~@/static/PINGFANG LIGHT.TTF')
+	   }
+	   @font-face{
+			font-family:"REGULAR";
+			src: url('~@/static/PINGFANG REGULAR.TTF')
 	   }
    uni-page{
 	   font-family: 'MEDIUM';

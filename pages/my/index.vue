@@ -1,5 +1,7 @@
 <template>
 	<view class="--status-bar-height">
+		<view class="my">
+			
 		<image src="../../static/组 685.png" style="width: 48rpx;margin: 120rpx 0 40rpx;" mode="widthFix"></image>
 		<view class="top" v-for="item in info" :key="item.index">
 			<view class="clearfix">
@@ -56,7 +58,7 @@
 			</view>
 		</view>
 	</view>
-
+		</view>
 
 </template>
 
